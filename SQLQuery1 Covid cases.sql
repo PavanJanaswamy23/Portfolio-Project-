@@ -86,12 +86,4 @@ where continent is not null
 order by 1,2
 
 
---- Looking at Total population vs Vaccinations 
 
-Select dea.continent, dea.location, dea.date, dea.population , vac.continent
-From PortfolioProject..['Covid deaths] dea
-Join PortfolioProject..['Covid vaccinations] vac
-     on dea.location = vac.location
-     and dea.date = vac.date 
-where dea.continent is not null
-	 order by  2,3
